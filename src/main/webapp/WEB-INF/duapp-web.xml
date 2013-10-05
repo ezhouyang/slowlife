@@ -6,9 +6,18 @@
   <system-properties>
     <property name="test.com" value="haha,test"/>
   </system-properties>
-
+  
+  <!-- add distribution session support 
+  <sessions-enabled>true</sessions-enabled>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+-->
   <static-files>
       <include path="/**.html" expiration ="access 1 months" />
+      <include path="/**.jpg"/>
+      <include path="/**.css"/>
+      <include path="/**.js"/>
   </static-files>
 
 </du-web-app>
